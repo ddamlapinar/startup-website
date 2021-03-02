@@ -7,7 +7,7 @@
 
 ##### Special thanks to [Jan Losert](https://www.janlosert.com/) for letting me use his design on this project &nbsp;
 
-###### Since it is a clone project and there is no commercial purpose, I changed some texts and images. &nbsp;
+##### Since it is a clone project and there is no commercial purpose, I changed some texts and images. &nbsp;
 
 
 ##### Here is the original design : [Dribble](https://dribbble.com/shots/9063567-Beforeyoushine-com-Youtube-Course) 
