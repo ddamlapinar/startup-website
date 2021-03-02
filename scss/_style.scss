@@ -1,0 +1,259 @@
+@font-face {
+    font-family: visbycf-medium;
+    src: url(assets/fonts/visbycf-medium-webfont.woff);
+    src: url(assets/fonts/visbycf-bold-webfont.woff);
+
+}
+// @include media-breakpoint-up(xs) { }
+// @include media-breakpoint-up(sm) { }
+// @include media-breakpoint-up(md) { }
+// @include media-breakpoint-up(lg) {
+//     .services {
+//         width: 220px;
+//         height: auto;
+//       }
+//  }
+// @include media-breakpoint-up(xl) { }
+
+
+body {
+    font-family: visbycf-bold;
+    color: #222222;
+    font-size: 16px;
+   
+}
+// Example usage:
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// // // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+    
+// .services {
+//     width: 222px;
+//     height: auto;
+// }
+
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+.divider-hero {
+    position: relative;
+
+}
+
+.divider-hero::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    left: 60px;
+    top: 15px;
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+.iconbox {
+    background-color: rgba(255, 255, 255, 0.12);
+    // max-width: 50px;
+    // height: 50px;
+    padding:15px;
+    border-radius: 3px;
+}
+
+.iconbox-white {
+    background-color: $primary;
+}
+
+.iconbox-white {
+    color: white;
+}
+
+.services {
+    // width: 360px;
+    height: 120px;
+    position: relative;
+}
+.services::after{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.10);
+    display:none;
+    
+}
+.services:hover::after{
+    display:block;
+}
+#resources:hover{
+    cursor:not-allowed;
+}
+.btn{
+    position:relative;
+    &::after{
+        content:"";
+        position:absolute;
+        height: 100%;
+        background-color:rgba(0,0,0,0.10);
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+        
+    }
+
+}
+
+.event-link:hover{
+    color:$primary !important;
+    text-decoration: underline !important;
+    
+}
+
+
+.divider-footer {
+    position: relative;
+    display: block;
+
+}
+
+.divider-footer::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 150px;
+    left: 280px;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 0.205);
+
+}
+
+.divider-blog {
+    position: relative;
+    display: block;
+
+}
+
+.divider-blog::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 150px;
+    left: 200px;
+    top: 28px;
+    background-color: rgba(22, 19, 19, 0.205);
+
+}
+
+.quote-divider {
+    position: relative;
+    display: block;
+}
+
+.quote-divider::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 150px;
+    left: 250px;
+    top: 12px;
+    background-color: rgba(22, 19, 19, 0.205);
+}
+
+.footer-bg {
+    background-image: url("../assets/images/footerbg.jpg");
+    // background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+}
+
+.blog-title {
+    font-size: 62px;
+}
+
+.blog-subtitle {
+    font-size: 12px;
+}
+
+.quote-title {
+    font-size: 52px;
+}
+
+.footer-title {
+    font-size: 62px;
+}
+
+.card-subtitle{
+    font-size: 12px;
+    color:rgba(63, 50, 122, 0.7);
+    
+}
+
+.services div>h5>i{
+    transition:all ease-in-out 0.35s;
+}
+
+.services:hover div>h5>i{
+    transform:translate(5px,0px);
+    transition:transform ease-in-out 0.35s;
+
+   
+}
+.detail-link i {
+    transition:all ease-in-out 0.35s;
+
+}
+
+.detail-link:hover{
+    opacity:0.7;
+    i {
+    transform:translate(5px,0px);
+    transition:transform ease-in-out 0.35s;
+    }
+    
+}
+#btn-light-blue:hover{
+    position:relative;
+    background-color:rgba(231, 231, 231, 0.678);
+    // &::after{
+    //     content:"";
+    //     position:absolute;
+    //     height: 100%;
+    //     background-color:rgba(0,0,0) !important;
+    //     opacity: 0;
+    //     &:hover {
+    //         opacity: 1;
+
+    //     }
+        
+    // }
+
+}
+
+nav ul li a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #222222 !important;
+    font-weight:bold !important;
+    &:hover{
+        color: $primary !important;
+    }
+}
+a:hover{
+    color:$primary !important;
+}
+
+
+@media(min-width:768px){
+    
+    .services {
+        // width: 360px;
+        height: 170px;
+    }
+}
